@@ -1,8 +1,3 @@
-alias brake='bundle exec rake'
-alias bruby='bundle exec ruby'
-alias testr='bruby -I lib:test'
-alias subl='~/bin/subl'
-alias bru='bundle exec rake test:units'
 __git_ps1 ()
 {
     local b="$(git symbolic-ref HEAD 2>/dev/null)";
@@ -13,6 +8,8 @@ __git_ps1 ()
 
 GIT_PS1_SHOWDIRTYSTATE=false
 export PS1='\[\033[1;36m\]\u at\[\033[00m\] \[\033[32m\]\W\[\033[33m\]$("__git_ps1")\[\033[00m\]$'
+
+[[ -r ~/.bashrc ]] && . ~/.bashrc
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
