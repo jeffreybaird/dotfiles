@@ -1,35 +1,32 @@
 [user]
 	name = jeffreybaird
-	email = jlbaird87@gmail.com
-[credential]
-	helper = /opt/boxen/bin/boxen-git-credential
+	email = jeffrey@roostify.com
 [diff]
 	color = true
 
 [hub]
-protocol = https
+    protocol = https
 
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-    excludesfile = /opt/boxen/config/git/gitignore
 
 [color]
     ui = true
+
 [color "diff"]
     whitespace = red reverse
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-    excludesfile = /opt/boxen/config/git/gitignore
 
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  lg = log -p
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  ls = ls-files
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
 [push]
-  default = simple
+    default = simple
